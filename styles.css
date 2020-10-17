@@ -1,0 +1,16 @@
+#deal {
+    font-style: italic;
+    font-family: sans-serif;
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: inline-start;
+    background: rgb(158, 116, 37);
+    width: fit-content;
+}
+
+h1 {
+    background-color: blueviolet;
+    font-size: 10ex;
+}

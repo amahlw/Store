@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STOP-N-SHOP</title>
+    <link rel="stylesheet" href="styles.css">
+
+
 </head>
 
 <body>
+    <title id="app">Snatch-N-Go </title>
+    <h1>Snatch-N-Go</h1>
     <nav>
         <ul>
             <li><a href="#">snacks-candy</a></li>
@@ -19,23 +24,82 @@
     </nav>
     <section id="snacks-candy">
         <h1>Snacks & Candy</h1>
-        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRkLqTYxctw_CtVcKReh3HijwS2q5va9_SnnZ-L28NZFfX80qU61KbQyDEG-q-UYTKsIIxRa63s2Q&usqp=CAc" alt="doritos" width="100">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRkLqTYxctw_CtVcKReh3HijwS2q5va9_SnnZ-L28NZFfX80qU61KbQyDEG-q-UYTKsIIxRa63s2Q&usqp=CAc" alt="doritos" width="100" </br>
+        <label>Snacks & Candy</label>
+        <select id="select-beverage">
+            <option value="sprite" selected>sprite</option>
+            <option value="fanta">fanta</option>
+            <option value="pepsi">pepsi</option>
+            <option value="coke">coke</option>
+        </select>
     </section>
 
     <section id="beverage">
         <h1>Beverage</h1>
+        <label>Beverages</label>
+        <select id="select-beverage">
+            <option value="sprite" selected>sprite</option>
+            <option value="fanta">fanta</option>
+            <option value="pepsi">pepsi</option>
+            <option value="coke">coke</option>
+        </select>
     </section>
     <section id="household">
         <h1> House Needs</h1>
+        <label>House Needs</label>
+        <select id="select-beverage">
+            <option value="sprite" selected>sprite</option>
+            <option value="fanta">fanta</option>
+            <option value="pepsi">pepsi</option>
+            <option value="coke">coke</option>
+        </select>
 
 
     </section>
     <section id="alcohol-tobacco">
         <h1> Liquer & Tobacco</h1>
+        <label>Liquer & Tobacco</label>
+        <select id="select-beverage">
+            <option value="sprite" selected>sprite</option>
+            <option value="fanta">fanta</option>
+            <option value="pepsi">pepsi</option>
+            <option value="coke">coke</option>
+        </select>
     </section>
     <section id="packages">
-        <h1>Bundle Deals</h1>
+        <h1 id="deal">Bundle Deals</h1>
+        <label>deals</label>
+        <select id="select-beverage">
+            <option value="sprite" selected>sprite</option>
+            <option value="fanta">fanta</option>
+            <option value="pepsi">pepsi</option>
+            <option value="coke">coke</option>
+        </select>
     </section>
+    <section id=" shop-cart" class="box">
+        <h1>Shopping Cart</h1>
+
+        <label> shop</label>
+    </section>
+    <footer>
+        <h1> Payment</h1>
+        <label>Payment options</label>
+        <select id="select-payment">
+            <option value="cash">Cash</option>
+            <option value="card">card</option>
+        </select>
+
+    </footer>
+
+    <script>
+        const successCallback = (position) => {
+            console.log(position);
+        }
+        const errorCallback = (error) => {
+            console.error(error);
+        }
+        navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+    </script>
 
 
 
