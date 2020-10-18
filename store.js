@@ -5,17 +5,22 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-    var removeCartItemButtons =
-}
-var removeCartItemButtons = document.getElementsByClassName(button name)
-for (var i = 0; i < removeCartItemButtons.length; i++) {
-    var button = removeCartItemButtons[i]
-    button.addEventListener('click', function(event) {
-        var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
+    var removeCartItemButtons = document.getElementsByClassName(button - name)
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
 
-    })
+
+    }
 }
+
+function removeCartItem(event) {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
+
+}
+
 
 function updateCartTotal() {
     var cartItemcontainer = document.getElementsByClassName('cart-items')[0]
