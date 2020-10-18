@@ -1,16 +1,32 @@
-#deal {
-    font-style: italic;
-    font-family: sans-serif;
-    margin: 2px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    float: inline-start;
-    background: rgb(158, 116, 37);
-    width: fit-content;
+.page-header a {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
 }
 
-h1 {
-    background-color: blueviolet;
-    font-size: 10ex;
+.page-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.page-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(162, 201, 21);
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
 }
