@@ -6,109 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STOP-N-SHOP</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="store.js" async></script>
 
 
 </head>
 
 <body>
-    <header class='page-header'>
-        <title id="app">Snatch-N-Go </title>
-        <h1>Snatch-N-Go</h1>
-        <nav>
+    <header class="main-header">
+        <nav class="main-nav nav">
             <ul>
-                <li><a href="#">Snacks-Candy</a></li>
-                <li><a href="#">Beverages</a></li>
-                <li><a href="#">Household</a></li>
-                <li><a href="#">Alcohol-Tobacco</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><a href="index.html">Snacks-Candy</a></li>
+                <li><a href="index.html">Beverages</a></li>
+                <li><a href="index.html">Household</a></li>
+                <li><a href="index.html">Alcohol-Tobacco</a></li>
+                <li><a href="index.html">Cart</a></li>
             </ul>
         </nav>
+        <h1 class="store-name store-name-large">Snatch-N-Go</h1>
     </header>
-    <div id="snackz" class="">
-        <section id="snacks-candy">
-            <h1>Snacks & Candy</h1>
-            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRkLqTYxctw_CtVcKReh3HijwS2q5va9_SnnZ-L28NZFfX80qU61KbQyDEG-q-UYTKsIIxRa63s2Q&usqp=CAc" alt="doritos" width="100" </br>
-            <label>Snacks & Candy</label>
-            <select id="select-beverage">
-            <option value="doritos">Doritos</option>
-            <option value="Oreo">Oreo</option>
-            <option value="snicker">Snicker</option>
-            <option value="kit kat">Kit-Kat</option>
-            <option value="cheetos">Cheetos</option>
-            <option value="ritz">Ritz Crackers</option>
-            <option value="milky-way">Milky Way</option>
-            <option value="butterfinger">Butterfinger</option>
-        </select>
-        </section>
-    </div>
-    <section id="beverage">
-        <h1>Beverage</h1>
-        <label>Beverages</label>
-        <select id="select-beverage">
-            <option value="sprite" >sprite</option>
-            <option value="fanta">fanta</option>
-            <option value="pepsi">pepsi</option>
-            <option value="coke">coke</option>
-            <option value="water">Water</option>
-            <option value="powerade">Powerade</option>
-            <option value="sweet-tea">Sweet-Tea</option>
-            
+    <section class="container content-section">
+        <h2 class="section-header">Choose Items</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Snacks-Candy</span>
+                <img class="shop-item-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRkLqTYxctw_CtVcKReh3HijwS2q5va9_SnnZ-L28NZFfX80qU61KbQyDEG-q-UYTKsIIxRa63s2Q&usqp=CAc" alt="doritos" width="100">
+                <div class="shop-item-details">
+                    <select id="select-snacks">
+                        <option value="doritos">Doritos</option>
+                        <option value="Oreo">Oreo</option>
+                        <option value="snicker">Snicker</option>
+                        <option value="kit kat">Kit-Kat</option>
+                        <option value="cheetos">Cheetos</option>
+                        <option value="ritz">Ritz Crackers</option>
+                        <option value="milky-way">Milky Way</option>
+                        <option value="butterfinger">Butterfinger</option>
+                    </select>
+                    <span class="shop-item-price">$1.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title"> Beverages
+                    
 
-        </select>
+                </span>
+                <img class="shop-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZ63tfbdlHO7FSypcRm0vbF4_7s0tQd4RnzQ&usqp=CAU" alt="beveragee" width="100">
+                <div class="shop-item-details">
+                    <select id="select-beverage">
+                        <option value="sprite" >sprite</option>
+                        <option value="fanta">fanta</option>
+                        <option value="pepsi">pepsi</option>
+                        <option value="coke">coke</option>
+                        <option value="water">Water</option>
+                        <option value="powerade">Powerade</option>
+                        <option value="sweet-tea">Sweet-Tea</option>
+                        
+                    </select>
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Household</span>
+                <img class="shop-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRsCGlVQi15KLN-qWbRgdpffw81HgE2mHM9jg&usqp=CAU">
+                <div class="shop-item-details">
+                    <select id="select-house">
+                        <option value="bleach">bleach</option>
+                        <option value="Soap">Irish Spring</option>
+                        <option value="tissue">Charmin</option>
+                        <option value="paper-towel">Bounty</option>
+                        <option value="dish-detergent">Dawn</option>
+                        <option value="laundry-detergent">Tide</option>
+                        <option value="toothpaste">Colgate</option>
+                       
+                    </select>
+                    <span class="shop-item-price">$9.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Alcohol-Tobacco</span>
+                <img class="shop-item-image" src="data:image/jpeg;base64,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">
+                <div class="shop-item-details">
+
+                    <select id="select-beverage">
+                        <option value="">sprite</option>
+                        <option value="fanta">fanta</option>
+                        <option value="pepsi">pepsi</option>
+                        <option value="coke">coke</option>
+                    </select>
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="household">
-        <h1> House Needs</h1>
-        <label>Household</label>
-        <select id="select-house">
-            <option value="bleach">bleach</option>
-            <option value="Soap">Irish Spring</option>
-            <option value="tissue">Charmin</option>
-            <option value="paper-towel">Bounty</option>
-            <option value="dish-detergent">Dawn</option>
-            <option value="laundry-detergent">Tide</option>
-            <option value="toothpaste">Colgate</option>
-           
-        </select>
 
-
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="Images" width="100" height="100">
+                    <span class="cart-item-title">T-Shirt</span>
+                </div>
+                <span class="cart-price cart-column">$19.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRkLqTYxctw_CtVcKReh3HijwS2q5va9_SnnZ-L28NZFfX80qU61KbQyDEG-q-UYTKsIIxRa63s2Q&usqp=CAc" width="100" height="100">
+                    <span class="cart-item-title">chips</span>
+                </div>
+                <span class="cart-price cart-column">$9.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$39.97</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
     </section>
-    <section id="alcohol-tobacco">
-        <h1> Liquer & Tobacco</h1>
-        <label>Liquer & Tobacco</label>
-        <select id="select-beverage">
-            <option value="">sprite</option>
-            <option value="fanta">fanta</option>
-            <option value="pepsi">pepsi</option>
-            <option value="coke">coke</option>
-        </select>
-    </section>
-
-    <section id=" shop-cart" class="box">
-        <h1>Shopping Cart</h1>
-
-        <label> shop</label>
-    </section>
-    <footer>
-        <h1> Payment</h1>
-        <label>Payment options</label>
-        <select id="select-payment">
-            <option value="cash">Cash</option>
-            <option value="card">card</option>
-        </select>
-
-    </footer>
-
-    <script>
-        const successCallback = (position) => {
-            console.log(position);
-        }
-        const errorCallback = (error) => {
-            console.error(error);
-        }
-        navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-    </script>
-
-
 
 </body>
 
