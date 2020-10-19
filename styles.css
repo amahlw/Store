@@ -76,6 +76,7 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
+    background-color: turquoise;
 }
 
 .section-header {
@@ -87,13 +88,14 @@ body {
     font-size: 2.5em;
 }
 
-.about-band-image {
+
+/* .about-band-image {
     float: left;
     height: 200px;
     width: 200px;
     margin: 15px;
     border-radius: 50%;
-}
+} */
 
 .main-footer {
     background-color: #56CCF2;

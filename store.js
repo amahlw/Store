@@ -64,7 +64,10 @@ function quantityChanged(event) {
 // add to cart button function 
 
 function addToCartClicked(event) {
+    console.log(event.target.closest("div"))
     var button = event.target
+    const item = button.closest("div").querySelector("select").value
+    console.log(item)
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
